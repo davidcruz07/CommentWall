@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:3000/comments';
+const BASE_URL = 'https://commentwall.onrender.com/comments';
 
 const API = {
     async getComments() {
