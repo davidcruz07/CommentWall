@@ -1,0 +1,33 @@
+/* Personalización del Scrollbar para el contenedor de comentarios */
+#comments-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+#comments-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+#comments-list::-webkit-scrollbar-thumb {
+    background: #a78bfa; /* Morado claro (purple-400) */
+    border-radius: 10px;
+}
+
+#comments-list::-webkit-scrollbar-thumb:hover {
+    background: #8b5cf6; /* Morado oscuro (purple-500) */
+}
+
+/* Animación suave al aparecer nuevos comentarios */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.4s ease-out forwards;
+}
+
+/* Ajustes de UX para el scroll */
+#comments-list {
+    scroll-behavior: smooth;
+}

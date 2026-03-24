@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Wall</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="bg-gray-100 min-h-screen">
+
+    <div class="max-w-2xl mx-auto p-4">
+        <section class="rounded-b-lg mt-4">
+
+            <form id="comment-form" class="bg-white p-6 rounded-lg shadow-md mb-8 border-t-4 border-purple-500">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Muro de Comentarios</h2>
+
+                <div class="flex flex-col gap-3">
+                    <input type="text" id="username-input" placeholder="Nombre de usuario"
+                        class="w-full shadow-inner p-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-purple-400 outline-none transition-all">
+
+                    <textarea id="message-input" placeholder="Escribe un mensaje (mín. 5 caracteres)..."
+                        class="w-full shadow-inner p-4 border border-gray-200 rounded-lg focus:ring-2 focus:ring-purple-400 outline-none transition-all"
+                        rows="3"></textarea>
+
+                    <button type="submit"
+                        class="font-bold py-3 px-4 w-full bg-purple-500 hover:bg-purple-600 transition-colors text-white shadow-md rounded-lg">
+                        Publicar Comentario
+                    </button>
+                </div>
+            </form>
+
+            <div class="flex justify-center mb-6">
+                <button id="refresh-btn"
+                    class="flex items-center bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-full transition-all shadow-md transform hover:scale-105">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                    </svg>
+                    Actualizar Muro
+                </button>
+            </div>
+
+            <div id="comments-list" class="pt-4 max-h-[600px] overflow-y-auto pr-2">
+            </div>
+
+            <div id="empty-state" class="hidden text-center py-12">
+                <p class="text-gray-400 italic text-lg">No hay comentarios aún. ¡Sé el primero!</p>
+            </div>
+
+        </section>
+    </div>
+
+    <script src="js/functions.js"></script>
+</body>
+
+</html>
