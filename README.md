@@ -4,7 +4,7 @@
 
 ---
 
-Un muro de comentarios interactivo que permite a los usuarios publicar, visualizar y gestionar mensajes en tiempo real. Este proyecto integra una arquitectura de cliente-servidor completa y segura, diseñada como práctica de desarrollo Fullstack.
+Un muro de comentarios interactivo que permite a los usuarios publicar, visualizar y gestionar mensajes en tiempo real. Este proyecto integra una arquitectura de cliente-servidor completa y segura.
 
 ## 🚀 Enlaces Rápidos
 
